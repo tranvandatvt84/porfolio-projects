@@ -10,7 +10,8 @@ This portfolio documents my hands-on projects as I build experience across Excel
 
 ## Featured Project: E-Commerce Financial Performance Analysis (Excel)
 
-🔗 **Project Link:** https://github.com/yourusername/your-repo-name  
+🔗 **Project Link:** [Analyze Profit for E-commerce Company Spreadsheet (Excel)](https://github.com/tranvandatvt84/porfolio-projects/blob/34c3c53b1ff46ad07fe3a6641fd0c56873498c0e/Analyze_Profit_for_E-commerce_Company/Analyze%20Profit%20for%20E-commerce%20Company%20Spreadsheet%20-%20Dat%20Tran.xlsx)
+  
 
 In this project, I acted as a consultant for an e-commerce company experiencing stagnating profits. Using Microsoft Excel, I analyzed the company’s financial and product-level data to understand what was driving performance changes and where improvements could be made.
 
