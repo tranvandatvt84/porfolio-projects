@@ -28,6 +28,21 @@ In this project, I acted as a consultant for an e-commerce company experiencing 
 This project demonstrates my ability to analyze business data end-to-end, translate numbers into insights, and communicate findings clearly in a consulting-style format.
 
 ---
+**Featured Project: U.S. Traffic Accident Pattern Analysis (Excel)**  
+🔗 **Project Link:** [U.S. Traffic Accident Analysis Dashboard (Excel)](https://docs.google.com/spreadsheets/d/1BgpyyvX7vj1-a5HdWwuC_NxeUTZakBqV/edit?usp=drive_link&ouid=115836857037863456191&rtpof=true&sd=true)
+
+In this project, I analyzed a large-scale U.S. traffic accident dataset (~7.7M records) to uncover temporal, geographic, and risk-based crash patterns. Using Microsoft Excel, I transformed raw data into a structured analytical model and built an executive dashboard to communicate insights clearly.
+
+**Project Overview**
+- Cleaned and transformed raw accident data using Power Query  
+- Built a scalable data model with PivotTables and calculated metrics  
+- Created an executive dashboard with KPIs, trends, maps, and heatmaps  
+- Analyzed crash patterns by year, state, day of week, and hour  
+- Compared crash frequency with crash severity to highlight risk differences  
+- Documented insights
+
+**Tools Used**
+- Microsoft Excel (Power Query, PivotTables, Data Model, Conditional Formatting, Dashboards)
 
 ## Contact
 
