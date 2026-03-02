@@ -1,3 +1,4 @@
+
 # 🧠 Olist Intelligence --- Advanced SQL Analytics (MySQL 8)
 
 **Author:** Dat Tran\
@@ -5,6 +6,12 @@
 **Dataset:** Brazilian Olist E-Commerce Public Dataset
 
 ------------------------------------------------------------------------
+# 📎 Dataset Source
+
+[Olist Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+------------------------------------------------------------------------
+
 
 ## 📌 Project Overview
 
@@ -190,12 +197,6 @@ Execute scripts in this order:
     01_Phase2.1_CreateViews.sql
     02_Phase2.2_core_business_metrics.sql
     03_Phase2.3.sql
-
-------------------------------------------------------------------------
-
-# 📎 Dataset Source
-
-Olist Brazilian E-Commerce Public Dataset (Kaggle)
 
 ------------------------------------------------------------------------
 
