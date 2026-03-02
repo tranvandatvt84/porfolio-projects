@@ -31,7 +31,7 @@ This project demonstrates my ability to analyze business data end-to-end, transl
 
 ## Featured Project: Olist Intelligence — Advanced SQL Analytics (MySQL 8)
 
-🔗 **Dataset Source:** [Olist Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+🔗 **Project Link:** [Brazilian Ecommerce - SQL](https://github.com/tranvandatvt84/porfolio-projects/tree/131ec72f87a5264cad17771e261458c96e30a6a4/Brazilian%20Ecommerce%20-%20SQL)
 
 In this project, I built an end-to-end SQL analytics workflow simulating a production-ready ETL pipeline. Starting from raw CSV ingestion, I progressed through data engineering, relationship modeling, and advanced cohort retention analysis.
 
