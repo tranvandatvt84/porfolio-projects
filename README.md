@@ -28,6 +28,26 @@ In this project, I acted as a consultant for an e-commerce company experiencing 
 This project demonstrates my ability to analyze business data end-to-end, translate numbers into insights, and communicate findings clearly in a consulting-style format.
 
 ---
+
+## Featured Project: Olist Intelligence — Advanced SQL Analytics (MySQL 8)
+
+🔗 **Dataset Source:** [Olist Brazilian E-Commerce Public Dataset (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+In this project, I built an end-to-end SQL analytics workflow simulating a production-ready ETL pipeline. Starting from raw CSV ingestion, I progressed through data engineering, relationship modeling, and advanced cohort retention analysis.
+
+### Project Overview
+- Bulk loaded large datasets using `LOAD DATA LOCAL INFILE`
+- Performed data quality validation and normalization
+- Built relational schema with PK/FK relationships
+- Created enriched analytical views with optimized indexes
+- Developed business KPI queries (revenue, AOV, delivery logistics)
+- Implemented cohort retention analysis
+
+### Tools Used
+- MySQL 8, SQL, Data Modeling, Analytical SQL
+
+---
+
 **Featured Project: U.S. Traffic Accident Pattern Analysis (Excel)**  
 🔗 **Project Link:** [U.S. Traffic Accident Analysis Dashboard (Excel)](https://docs.google.com/spreadsheets/d/1BgpyyvX7vj1-a5HdWwuC_NxeUTZakBqV/edit?usp=drive_link&ouid=115836857037863456191&rtpof=true&sd=true)
 
