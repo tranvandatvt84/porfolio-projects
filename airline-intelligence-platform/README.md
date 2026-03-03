@@ -26,7 +26,8 @@ airline-intelligence-platform/
 ```
 
 > **Note:** `data/` is excluded from version control (raw + processed files are too large).  
-> Raw source: [BTS On-Time Performance](https://www.transtats.bts.gov/) — place `flights_2013.csv` in `data/raw/dot_ontime/` and run the pipeline in order.
+> **Download raw data:** [BTS On-Time Performance — Download Page](https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FGJ&QO_fu146_anzr=b0-gvzr)  
+> Select year **2013**, download all months, combine into `flights_2013.csv`, and place it in `data/raw/dot_ontime/`. Then run the pipeline in order.
 
 ---
 

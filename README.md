@@ -85,5 +85,8 @@ In this project, I built an end-to-end data pipeline and analytics platform on t
 - Ran data quality validation checks across all pipeline stages
 - Performed regression analysis to quantify delay drivers by carrier, route, and season
 
+### Data Source
+- [BTS On-Time Performance (2013)](https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FGJ&QO_fu146_anzr=b0-gvzr) — U.S. Department of Transportation
+
 ### Tools Used
 - Python (Pandas, NumPy, scikit-learn), Jupyter Notebooks, Parquet / PyArrow
