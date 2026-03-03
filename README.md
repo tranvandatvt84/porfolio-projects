@@ -1,96 +1,89 @@
-# Airline Intelligence Platform
+# Dat Tran – Data Analysis Portfolio
 
-## Architecture Map
+## About Me
 
-This project follows a medallion-style data pipeline:
+Hi! I’m **Dat Tran**, a Computer Information Systems student with a focus on data analysis and business intelligence. I’m interested in using data to understand business performance, diagnose problems, and propose data-driven solutions. My work emphasizes clear financial analysis, structured thinking, and practical recommendations for decision-makers.
 
-`Raw DOT data -> Bronze normalization -> Silver cleaned model -> Gold marts -> Regression analysis`
+This portfolio documents my hands-on projects as I build experience across Excel, SQL, Python, and BI tools.
 
-## Repository Structure
+---
 
-```text
-airline-intelligence-platform/
-├── README.md
-├── test.py
-├── data/
-│   ├── raw/
-│   │   └── dot_ontime/
-│   │       ├── flights_2013.csv
-│   │       ├── manifest.csv
-│   │       └── dictionary.html
-│   └── processed/
-│       ├── bronze/
-│       │   └── dot_ontime/
-│       ├── silver/
-│       └── gold/
-├── reports/
-└── src/
-    ├── bronze_to_parquet.py
-    ├── manifest.py
-    ├── 01_silver_clean.ipynb
-    ├── 02_data_quality.ipynb
-    ├── 03_gold_marts.ipynb
-    └── 04_analysis_regression.ipynb
-```
+## Featured Project: E-Commerce Financial Performance Analysis (Excel)
 
-- `data/raw/dot_ontime/`: Source files (`flights_2013.csv`, `manifest.csv`, `dictionary.html`).
-- `data/processed/bronze/dot_ontime/`: Initial standardized outputs from raw ingestion.
-- `data/processed/silver/`: Cleaned flight fact table(s), including `fact_flights.parquet`.
-- `data/processed/gold/`: Analytics-ready marts for airport, route, carrier, and delay-cause performance.
-- `src/`: ETL scripts and notebooks for each transformation stage.
-- `reports/`: Generated report artifacts and analysis deliverables.
+🔗 **Project Link:** [Analyze Profit for E-commerce Company Spreadsheet (Excel)](https://github.com/tranvandatvt84/porfolio-projects/tree/34c3c53b1ff46ad07fe3a6641fd0c56873498c0e/Analyze_Profit_for_E-commerce_Company)
+  
 
-## Pipeline Stages
+In this project, I acted as a consultant for an e-commerce company experiencing stagnating profits. Using Microsoft Excel, I analyzed the company’s financial and product-level data to understand what was driving performance changes and where improvements could be made.
 
-1. **Bronze ingestion**
-   - Script: `src/bronze_to_parquet.py`
-   - Purpose: Convert raw DOT files into typed parquet datasets.
+### Project Overview
+- Cleaned and structured raw financial data
+- Built a dynamic **Profit & Loss (P&L) dashboard** with year selection
+- Analyzed profitability metrics including Gross Profit, EBIT, EBITDA, and Net Earnings
+- Investigated **product-level performance**, including units sold and average daily profit
+- Summarized findings and proposed actionable recommendations to improve profitability
 
-2. **Silver cleaning**
-   - Notebook: `src/01_silver_clean.ipynb`
-   - Purpose: Build cleaned, analysis-safe flight-level fact data.
+### Tools Used
+- Microsoft Excel (Pivot Tables, formulas, dashboards, data cleaning)
 
-3. **Data quality validation**
-   - Notebook: `src/02_data_quality.ipynb`
-   - Purpose: Validate schema, nulls, distributions, and business sanity checks.
+This project demonstrates my ability to analyze business data end-to-end, translate numbers into insights, and communicate findings clearly in a consulting-style format.
 
-4. **Gold marts**
-   - Notebook: `src/03_gold_marts.ipynb`
-   - Outputs:
-     - `mart_airport_daily.parquet`
-     - `mart_route_monthly.parquet`
-     - `mart_carrier_monthly.parquet`
-     - `mart_delay_causes.parquet`
+---
 
-5. **Modeling / insights**
-   - Notebook: `src/04_analysis_regression.ipynb`
-   - Purpose: Regression-driven insight generation from gold marts.
+## Featured Project: Olist Intelligence — Advanced SQL Analytics (MySQL 8)
 
-## Gold Data Products
+🔗 **Project Link:** [Brazilian Ecommerce - SQL](https://github.com/tranvandatvt84/porfolio-projects/tree/131ec72f87a5264cad17771e261458c96e30a6a4/Brazilian%20Ecommerce%20-%20SQL)
 
-- **Airport Daily Performance**
-	- Grain: `flight_date x airport`
-	- Metrics: flights, cancel/divert rates, delay rates, average arrival delay, average taxi-out.
+In this project, I built an end-to-end SQL analytics workflow simulating a production-ready ETL pipeline. Starting from raw CSV ingestion, I progressed through data engineering, relationship modeling, and advanced cohort retention analysis.
 
-- **Route Monthly Performance**
-	- Grain: `month_start x origin x dest`
-	- Metrics: flights, cancel rate, delay rates, average arrival delay, average distance.
+### Project Overview
+- Bulk loaded large datasets using `LOAD DATA LOCAL INFILE`
+- Performed data quality validation and normalization
+- Built relational schema with PK/FK relationships
+- Created enriched analytical views with optimized indexes
+- Developed business KPI queries (revenue, AOV, delivery logistics)
+- Implemented cohort retention analysis
 
-- **Carrier Monthly Performance**
-	- Grain: `month_start x carrier`
-	- Metrics: flights, cancel rate, delay rates, average arrival delay, average taxi-out.
+### Tools Used
+- MySQL 8, SQL, Data Modeling, Analytical SQL
 
-- **Delay Cause Analysis**
-	- Grain: `month_start x carrier` (for delayed, non-cancelled flights)
-	- Metrics: average contribution by delay cause (carrier, weather, NAS, security, late aircraft).
+---
 
-## Execution Order
+**Featured Project: U.S. Traffic Accident Pattern Analysis (Excel)**  
+🔗 **Project Link:** [U.S. Traffic Accident Analysis Dashboard (Excel)](https://docs.google.com/spreadsheets/d/1BgpyyvX7vj1-a5HdWwuC_NxeUTZakBqV/edit?usp=drive_link&ouid=115836857037863456191&rtpof=true&sd=true)
 
-Run in this order for full refresh:
+In this project, I analyzed a large-scale U.S. traffic accident dataset (~7.7M records) to uncover temporal, geographic, and risk-based crash patterns. Using Microsoft Excel, I transformed raw data into a structured analytical model and built an executive dashboard to communicate insights clearly.
 
-1. `src/bronze_to_parquet.py`
-2. `src/01_silver_clean.ipynb`
-3. `src/02_data_quality.ipynb`
-4. `src/03_gold_marts.ipynb`
-5. `src/04_analysis_regression.ipynb`
+**Project Overview**
+- Cleaned and transformed raw accident data using Power Query  
+- Built a scalable data model with PivotTables and calculated metrics  
+- Created an executive dashboard with KPIs, trends, maps, and heatmaps  
+- Analyzed crash patterns by year, state, day of week, and hour  
+- Compared crash frequency with crash severity to highlight risk differences  
+- Documented insights
 
+**Tools Used**
+- Microsoft Excel (Power Query, PivotTables, Data Model, Conditional Formatting, Dashboards)
+
+## Contact
+
+📧 Email: tranvandatvt84@gmail.com  
+🔗 LinkedIn: www.linkedin.com/in/dattran48  
+📍 Location: Texas, USA
+
+---
+
+## Featured Project: U.S. Airline Intelligence Platform (Python / Pandas / Jupyter)
+
+🔗 **Project Link:** [U.S. Airline Intelligence Platform](https://github.com/tranvandatvt84/porfolio-projects/tree/main/airline-intelligence-platform)
+
+In this project, I built an end-to-end data pipeline and analytics platform on the BTS On-Time Performance dataset (~6M flights, 2013). The pipeline follows a medallion architecture (Bronze → Silver → Gold) and culminates in regression-driven delay insights.
+
+### Project Overview
+- Ingested raw DOT CSV data and converted to Parquet (Bronze layer)
+- Cleaned and modeled a flight-level fact table with 30+ derived features (Silver layer)
+- Built four analytics-ready Gold marts: airport daily, route monthly, carrier monthly, delay causes
+- Ran data quality validation checks across all pipeline stages
+- Performed regression analysis to quantify delay drivers by carrier, route, and season
+
+### Tools Used
+- Python (Pandas, NumPy, scikit-learn), Jupyter Notebooks, Parquet / PyArrow
